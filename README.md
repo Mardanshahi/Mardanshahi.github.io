@@ -1,4 +1,4 @@
-# Nemati's Portfolio
+# Masoud's Portfolio
 ## Template inspired by Bedimcode - 2020
 
 - Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
@@ -6,5 +6,5 @@
 - Compatible with all mobile devices and desktop, with a beautiful and pleasant user interface.
 
 ### Desktop Preview
-![desktop preview img](/desktop.png)
+![desktop preview img](/preview/theme-2.jpg)
 
