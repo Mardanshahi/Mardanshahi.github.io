@@ -141,7 +141,7 @@
 
             <div class="about__information-data">
               <i class="bx bx-envelope about__information-icon"></i>
-              <span>iammardanshahi@gmail.com</span>
+              <span>iammardanshahi[at]gmail.com</span>
             </div>
           </div>
         </div>
@@ -419,11 +419,15 @@
         <div class="contact__container bd-grid">
           <form method="post" action="backend/process_contact_form.php" class="contact__form">
             <div class="contact__inputs">
+              <label>
                 <input type="text" placeholder="Name" class="contact__input" name="name"/>
-                <input type="mail" placeholder="Email" class="contact__input" name="email"/>
+              </label>
+              <label>
+                <input type="email" placeholder="Email" class="contact__input" name="email"/>
+              </label>
             </div>
 
-            <textarea
+            <label for=""></label><textarea
               name="message"
               id=""
               cols="0"
@@ -447,7 +451,7 @@
 
             <div class="contact__info">
               <h3 class="contact__subtitle">Email</h3>
-              <span class="contact__text">iammardanshahi@gmail.com</span>
+              <span class="contact__text">iammardanshahi[at]gmail.com</span>
             </div>
           </div>
         </div>
