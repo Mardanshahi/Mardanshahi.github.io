@@ -381,24 +381,24 @@ img {
 }
 
 .skills__dt {
-  width: 100%;
+  width: 50%;
 }
 
 .skills__oop {
-  width: 100%;
+  width: 80%;
 }
 .skills__python {
-  width: 95%;
+  width: 90%;
 }
-.skills__java {
-  width: 85%;
+.skills__dotnet {
+  width: 90%;
 }
 .skills__C {
   width: 80%;
 }
 
-.skills__js {
-  width: 75%;
+.skills__html {
+  width: 90%;
 }
 
 .skills__hs {
@@ -410,10 +410,10 @@ img {
 }
 
 .skills__goal {
-  width: 98%;
+  width: 100%;
 }
 .skills__collab {
-  width: 95%;
+  width: 80%;
 }
 
 .skills__pos {
@@ -425,7 +425,7 @@ img {
 }
 
 .skills__ps {
-  width: 80%;
+  width: 100%;
 }
 
 .skills__em {
@@ -433,7 +433,7 @@ img {
 }
 
 .skills__cm {
-  width: 85%;
+  width: 80%;
 }
 
 .skills__ct {
