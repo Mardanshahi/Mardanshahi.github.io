@@ -204,7 +204,7 @@ img {
 
 /*===== HOME =====*/
 .home__container {
-  height: calc(100vh - var(--header-height));
+  /* height: calc(100vh - var(--header-height)); */
   align-items: center;
 }
 
@@ -306,7 +306,8 @@ img {
 }
 
 .about__data {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about__description {
@@ -469,6 +470,8 @@ img {
 .experience__specialty {
   display: block;
   font-size: var(--smaller-font-size);
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .education__university,
@@ -586,7 +589,11 @@ img {
 .projects__content:hover .link__title {
   color: var(--first_color-lighten);
 }
-
+.projects__img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+}
 /* ===== CONTACT =====*/
 .contact__container {
   row-gap: 3rem;
@@ -636,8 +643,8 @@ img {
 .footer {
   background-color: var(--first_color-darken);
   color: var(--first_color-lighten);
-  text-align: center;
-}
+  text-align: justify;
+  text-justify: inter-word;}
 
 .footer__title {
   font-size: var(--h1-font-size);
@@ -696,14 +703,17 @@ img {
 
   .about__description {
     margin-bottom: var(--mb-5);
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 1rem;
   }
 
-  .about__img {
+  /* .about__img {
     width: 220px;
-  }
+  } */
 
   .about__information {
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
 
   .contact__inputs {
