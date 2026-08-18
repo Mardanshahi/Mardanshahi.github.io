@@ -3,469 +3,438 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- ===== BOX ICONS ===== -->
+    <meta
+      name="description"
+      content="Masoud Mardanshahi — Senior OpenGL Developer at MiNNOVAA. Medical volume rendering, cinematic GPU path tracing, and DICOM visualization for the ZEUS workstation."
+    />
+    <meta name="author" content="Masoud Mardanshahi" />
+    <meta property="og:title" content="Masoud Mardanshahi — Senior OpenGL Developer" />
+    <meta
+      property="og:description"
+      content="Real-time medical volume rendering and a cinematic OpenGL 3.3 path tracer for MiNNOVAA's ZEUS workstation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.masoudmardanshahi.ir/" />
+    <meta
+      property="og:image"
+      content="https://www.masoudmardanshahi.ir/assets/img/zeus-opengl-engine.jpg"
+    />
+    <title>Masoud Mardanshahi — Senior OpenGL Developer</title>
+    <link rel="icon" href="assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <title>Masoud's Portfolio </title>
-
-     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
-
-
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-
   <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div class="nav__toggle" id="nav-toggle">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="#home">Masoud</a>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Open menu">
           <i class="bx bx-menu"></i>
-        </div>
-
-        <div>
-          <a href="#" class="nav__logo">Masoud</a>
-        </div>
-
+        </button>
         <div class="nav__menu" id="nav-menu">
-          <div class="nav__close" id="nav-close">
+          <button class="nav__close" id="nav-close" type="button" aria-label="Close menu">
             <i class="bx bx-x"></i>
-          </div>
-
+          </button>
           <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About Me</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-<!--            <li class="nav__item">-->
-<!--              <a href="#projects" class="nav__link">Projects</a>-->
-<!--            </li>-->
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Get In Touch</a>
-            </li>
+            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#work">Work</a></li>
+            <li><a class="nav__link" href="#experience">Experience</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home" id="home">
-        <div class="home__container bd-grid">
-          <div class="home__data">
-            <div class="home__img">
-              <img class="" src="./assets/img/profile.jpg" alt="">
-            </div>
-
-            <h1 class="home__title"> Masoud Mardanshahi</h1>
-            <span class="home__profession"><br />OpenGL Developer</span>
-
-            <div class="home__social">
-              <a
-                href="https://linkedin.com/in/mmardanshahi/"
-                class="home__social-link"
-                ><i class="bx bxl-linkedin"></i
-              ></a>
-              <a href="https://github.com/mardanshahi" class="home__social-link"
-                ><i class="bx bxl-github"></i
-              ></a>
-            </div>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero__grid">
+          <div class="hero__photo">
+            <img src="assets/img/profile.jpg" alt="Portrait of Masoud Mardanshahi" />
           </div>
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__data">
-            <p class="about__description">
-              Hi, This is Masoud, An experienced Software developer proficient in OpenGL and Computer Graphics. Highly skilled in C#, C++ and python development with total of 6 years in the industry, including 3 years dedicated to OpenGL development.<br /><br />
-              Implemented Volume Rendering using one of the most advanced technology currently available in the market.<br /><br />
-              Implemented cutting-edge technologies, continuously expanding my knowledge to stay ahead of the curve; achieved measurable improvements in efficiency and productivity. Seek to work for a successful company that uses cutting-edge technologies and has vision and who recognizes and rewards performers.<br /><br />
+          <div class="hero__copy">
+            <p class="eyebrow">MiNNOVAA · ZEUS workstation</p>
+            <h1>Masoud Mardanshahi</h1>
+            <p class="hero__role">Senior OpenGL Developer</p>
+            <p class="hero__lead">
+              I build real-time medical volume renderers — GPU ray marching,
+              cinematic path tracing, and 3D workstation tools — for ZEUS,
+              MiNNOVAA’s imaging workstation.
             </p>
-            <img src="assets/img/about.jpg" alt="" class="about__img" />
-          </div>
-
-          <div class="about__information">
-            <h3 class="about__information-title">Information</h3>
-
-            <div class="about__information-data">
-              <i class="bx bx-user about__information-icon"></i>
-              <span>Masoud Mardanshahi</span>
+            <div class="hero__actions">
+              <a class="button" href="#work">See the latest work</a>
+              <a class="button button--ghost" href="https://www.linkedin.com/in/mmardanshahi/">LinkedIn</a>
             </div>
-
-            <div class="about__information-data">
-              <i class="bx bx-navigation about__information-icon"></i>
-              <span>Tehran, Iran (open to relocation)</span>
-            </div>
-
-            <div class="about__information-data">
-              <i class="bx bx-phone about__information-icon"></i>
-              <span>+98 903 123 1991</span>
-            </div>
-
-            <div class="about__information-data">
-              <i class="bx bx-envelope about__information-icon"></i>
-              <span>iammardanshahi[at]gmail.com</span>
+            <div class="hero__social">
+              <a href="https://www.linkedin.com/in/mmardanshahi/" aria-label="LinkedIn">
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://github.com/mardanshahi" aria-label="GitHub">
+                <i class="bx bxl-github"></i>
+              </a>
+              <a href="mailto:iammardanshahi@gmail.com" aria-label="Email">
+                <i class="bx bx-envelope"></i>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!--===== SKILLS =====-->
-      <!-- <section class="skills section" id="skills">
-        <span class="section-subtitle">Why Choose Me</span>
-        <h2 class="section-title">My Expertise Area</h2>
-
-        <div class="skills__container bd-grid">
-          <div class="skills__content">
-            <h3 class="skills__subtitle">Technical Skills</h3>
-
-            <div class="skills__data">
-              <span class="skills__name"
-                >Functional / Object-Oriented / Solid  </span >
-              <span class="skills__number">80%</span>
-              <span class="skills__bar skills__oop"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Python</span>
-              <span class="skills__number">90%</span>
-              <span class="skills__bar skills__python"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">.Net Framework</span>
-              <span class="skills__number">90%</span>
-              <span class="skills__bar skills__dotnet"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">C/C++</span>
-              <span class="skills__number">80%</span>
-              <span class="skills__bar skills__C"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">HTML/CSS</span>
-              <span class="skills__number">90%</span>
-              <span class="skills__bar skills__html"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Data Structures</span>
-              <span class="skills__number">50%</span>
-              <span class="skills__bar skills__dt"></span>
-            </div>
-
-          </div>
-
-          <div class="skills_content">
-            <h3 class="skills__subtitle">Soft Skills</h3>
-
-            <div class="skills__data">
-              <span class="skills__name">Goal-Oriented</span>
-              <span class="skills__number">100%</span>
-              <span class="skills__bar skills__goal"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Collaboration</span>
-              <span class="skills__number">80%</span>
-              <span class="skills__bar skills__collab"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Positivity</span>
-              <span class="skills__number">85%</span>
-              <span class="skills__bar skills__pos"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Adaptability</span>
-              <span class="skills__number">80%</span>
-              <span class="skills__bar skills__ab"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Problem Solving</span>
-              <span class="skills__number">100%</span>
-              <span class="skills__bar skills__ps"></span>
-            </div>
-
-            <div class="skills__data">
-              <span class="skills__name">Communication</span>
-              <span class="skills__number">80%</span>
-              <span class="skills__bar skills__cm"></span>
-            </div>
-
-
-          </div>
+      <section class="section" id="about">
+        <div class="section__head">
+          <p class="eyebrow">About</p>
+          <h2>Medical graphics, shipped in a PACS viewer</h2>
         </div>
-      </section> -->
-
-      <!--===== QUALIFICATION =====-->
-      <section class="education section">
-        <span class="section-subtitle">Qualification</span>
-        <h2 class="section-title">My Journey</h2>
-
-        <div class="qualification__container bd-grid">
-          <div class="education__container bd-grid">
-
-
-          <div class="experience__container bd-grid">
-            <div class="experience__content">
-              <div>
-                <h3 class="experience__year">2021 - Present</h3>
-                <span class="experience__loc">Marcopacs</span>
-              </div>
-
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div>
-                <h3 class="experience__race">OpenGL Developer</h3>
-                <span class="experience__specialty"
-                  >* Developed a library to handle Fo-Dicom to SimpleITK Conversions and Digital Subtraction Angiography (DSA) operations.
-                  * Released a special Dicom viewer called “Faraabeen” which is the only Software that can decrypt “Kekishe” encrypted Dicoms. 
-                  * Developed cutting-edge technology for Marcopacs PACS Workstation called “3D Volume Rendering Toolkit”. This led to 3D visualization of Dicom Slices in real-time.
-                  * Implemented Ray Casting algorithm which is the most advanced technology currently available in the market for medical volume rendering. 
-                </span>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div>
-                <h3 class="experience__year">2019 - 2021</h3>
-                <span class="experience__loc">Roundium</span>
-              </div>
-
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div>
-                <h3 class="experience__race">Image processing Scientist</h3>
-                <span class="experience__specialty"
-                >Developed a pipeline for an optical head position tracking in addition to pupil tracking to estimate the overall user gaze direction. We reached the mean accuracy of 2 degrees for our custom made eye-tracking system. Which was at the same level of state of the art articles but in real-time.
-                </span>
-              </div>
-            </div>
-
-
-            <div class="experience__content">
-              <div>
-                <h3 class="experience__year">2018 - 2019</h3>
-                <span class="experience__loc"> Tehran Jarrah Novin</span>
-              </div>
-
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div>
-                <h3 class="experience__race">Technical Support</h3>
-                <span class="experience__specialty"
-                  >Technical support for Covedien and Medtronics devices
-                </span>
-              </div>
-            </div>
-
-            <div class="education__content">
-              <div>
-                <h3 class="education__year">2016 - 2018</h3>
-                <span class="education__university">Khaje Nasir Toosi University of Technology</span>
-              </div>
-
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div>
-                <h3 class="education__race">Master of Science (M.Sc)</h3>
-                <span class="education__specialty">Biomedical Engineering - Thesis: "Design and construction of an Eye-Tracking system </span>
-              </div>
-            </div>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I am a Senior OpenGL Developer at MiNNOVAA with about eight years
+              in industry and five years dedicated to OpenGL. My work sits at
+              the intersection of DICOM, GPU rendering, and clinical 3D tools:
+              taking CT and MR volumes from slice stacks to interactive,
+              high-quality 3D on Windows workstations.
+            </p>
+            <p>
+              In Vista, the viewer behind ZEUS, I own the OpenGL 3.3 Core
+              pipeline — from 3D textures and transfer functions to a cinematic
+              path tracer with stochastic free-flight sampling, GGX materials,
+              and HDR environment lighting. The same stack powers production
+              DVR, MPR, volume cut, and bounding-box crop, all without leaving
+              OpenGL 3.3.
+            </p>
+            <p>
+              Based in Tehran, Iran, and open to relocation. I want to work
+              with teams that ship demanding graphics and recognize the people
+              who build them.
+            </p>
           </div>
-
-            <div class="education__content">
-              <div>
-                <h3 class="education__year">2009 - 2014</h3>
-                <span class="education__university"
-                  > Shahid Rajaee University</span
-                >
-              </div>
-
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div>
-                <h3 class="education__race">Bachelor of Science(B.S)</h3>
-                <span class="education__specialty">Electrical Engineering</span>
-              </div>
-            </div>
-          </div>
+          <aside class="facts">
+            <h3>Information</h3>
+            <ul>
+              <li>
+                <i class="bx bx-map"></i>
+                <span>Tehran, Iran · open to relocation</span>
+              </li>
+              <li>
+                <i class="bx bx-briefcase"></i>
+                <span>Senior OpenGL Developer @ MiNNOVAA</span>
+              </li>
+              <li>
+                <i class="bx bx-time"></i>
+                <span>~8 years industry · ~5 years OpenGL</span>
+              </li>
+              <li>
+                <i class="bx bx-phone"></i>
+                <a href="tel:+989031231991">+98 903 123 1991</a>
+              </li>
+              <li>
+                <i class="bx bx-envelope"></i>
+                <a href="mailto:iammardanshahi@gmail.com">iammardanshahi@gmail.com</a>
+              </li>
+            </ul>
+          </aside>
         </div>
       </section>
 
-     <!-- &lt;!&ndash;===== PROJECTS =====&ndash;&gt;--> 
-     <section class="projects section" id="projects">
-       <span class="section-subtitle">My portfolio</span>
-       <h2 class="section-title">Recent Projects</h2>
-
-       <div class="projects__container bd-grid">
-           <div class="projects__content">
-               <i class='bx bxl-python projects__icon' ></i>
-               <h3 class="projects__title">Medical 3D Volume Rendering: Ray Casting</h3>
-               <p class="projects__description">Developed cutting-edge technology for Marcopacs PACS Workstation that brings 3D visualization of Dicom Slices to this software.
-                implemented the Ray Casting algorithm which is the most advanced technology currently available in the market for medical volume rendering.
-                <br /><br /></p>
-               <img src="assets/img/3D Volume Rendering.png" alt="" class="projects__img" />
-<!-- 
-               <a href="https://github.com/tinanemati/Connect_4_AI" class="project-detail"><i class='bx bx-link-external'></i></a>
-                <span class="link__title">Project's Showcase</span> -->
-           </div>
-
-            <div class="projects__content">
-                <i class='bx bxl-javascript projects__icon' ></i>
-                <h3 class="projects__title">Digital Subtraction Angiography (DSA)</h3>
-                <p class="projects__description"> Developed a library to handle Fo-Dicom to SimpleITK Conversions and Digital Subtraction Angiography (DSA) operations. Increased DSA speed by 2X compared to prior Leadtools DSA toolkit.<br /><br /></p>
-                <img src="assets/img/DSAPipeline.png" alt="" class="projects__img" />
-                <!-- <a href="https://github.com/tinanemati/3D_Graph_Loader" class="project-detail"><i class='bx bx-link-external'></i></a>
-                <span class="link__title">Project's Showcase</span> -->
-            </div>
-
-<!--            <div class="projects__content">-->
-<!--                <i class='bx bxl-python projects__icon' ></i>-->
-<!--                <h3 class="projects__title">Reliable and Congestion Control UDP </h3>-->
-<!--                <p class="projects__description">Implemented a reliable version of UDP sever which is resistant to network congestion with 12% increase in-->
-<!--                    packet transmission performance and 5% decrease in packet loss across the server and client.<br /><br /></p>-->
-<!--                    <a href="https://github.com/tinanemati/Reliable_UDP" class="project-detail"><i class='bx bx-link-external'></i></a>-->
-<!--                    <span class="link__title">Project's Showcase</span>-->
-<!--            </div>-->
-
-<!--            <div class="projects__content">-->
-<!--                <i class='bx bxl-python projects__icon' ></i>-->
-<!--                <h3 class="projects__title">Skamania II GPS</h3>-->
-<!--                <p class="projects__description">An off-trail pathfinding app that finds the most hiker-friendly trail for an arbitrary terrain called Skamina hiker GPS II.<br /><br /></p>-->
-<!--                <a href="https://github.com/tinanemati/Skamina_Hiker_GPS_Improved" class="project-detail"><i class='bx bx-link-external'></i></a>-->
-<!--                <span class="link__title">Project's Showcase</span>-->
-<!--            </div>-->
-
-<!--            <div class="projects__content">-->
-<!--                <i class='bx bxl-python projects__icon' ></i>-->
-<!--                <h3 class="projects__title">Classifying FashionMNIST</h3>-->
-<!--                <p class="projects__description">Designed a neural network that achieves 90% test (not training) accuracy on the FashionMNIST dataset; using PyTorch.<br /><br /></p>-->
-<!--                <a href="https://github.com/tinanemati/Fashion_MNIST" class="project-detail"><i class='bx bx-link-external'></i></a>-->
-<!--                <span class="link__title">Project's Showcase</span>-->
-<!--            </div>-->
-
-<!--            <div class="projects__content">-->
-<!--                <i class='bx bx-code-block projects__icon'></i>-->
-<!--                <h3 class="projects__title">Linux Shell “sshell”</h3>-->
-<!--                <p class="projects__description">Created a simple shell called “sshell” which accepts input from the user in a form of command lines and-->
-<!--                    supports simple built-in commands, output redirection, piping, and error management with 99% test accuracy. </p>-->
-<!--            </div>-->
-
-<!--            <div class="projects__content">-->
-<!--                <i class='bx bx-code-block projects__icon'></i>-->
-<!--                <h3 class="projects__title">Simple File system Access API</h3>-->
-<!--                <p class="projects__description">Created a very simple filesystem: ECS150-FS API for applications to read/write files from/to this filesystem in C. </p>-->
-<!--            </div>-->
-
+      <section class="section" id="work">
+        <div class="section__head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Rendering for a clinical workstation</h2>
         </div>
-     </section>
 
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <span class="section-subtitle">Contact Me</span>
-        <h2 class="section-title">Get in Touch</h2>
-
-        <div class="contact__container bd-grid">
-          <form method="post" action="backend/process_contact_form.php" class="contact__form">
-            <div class="contact__inputs">
-              <label>
-                <input type="text" placeholder="Name" class="contact__input" name="name"/>
-              </label>
-              <label>
-                <input type="email" placeholder="Email" class="contact__input" name="email"/>
-              </label>
-            </div>
-
-            <label for=""></label><textarea
-              name="message"
-              id=""
-              cols="0"
-              rows="10"
-              placeholder="Message"
-              class="contact__input"
-            ></textarea>
-
-            <input
-              type="submit"
-              value="Send Message"
-              class="button contact__button"
+        <article class="featured">
+          <figure class="featured__figure">
+            <img
+              src="assets/img/zeus-opengl-engine.jpg"
+              alt="Cinematic GPU volume path tracer in the ZEUS workstation: a CT skull rendered with path-tracing compositing, transfer-function controls, and 3D orientation overlay."
             />
-          </form>
+            <figcaption>
+              Cinematic volume path tracer in ZEUS — stochastic free-flight
+              sampling, GGX / diffuse response, HDR lighting, and progressive
+              accumulation on OpenGL 3.3.
+            </figcaption>
+          </figure>
+          <div class="featured__body">
+            <p class="featured__kicker">July 2026 · MiNNOVAA ZEUS</p>
+            <h3>OpenGL Rendering Engine for ZEUS</h3>
+            <p>
+              A new cinematic rendering engine for ZEUS, MiNNOVAA’s imaging
+              workstation. It keeps an OpenGL 3.3 Core profile and ObjectTK
+              abstractions for GPU resources, so the same path runs on the
+              workstation GPUs already in the field.
+            </p>
+            <p>
+              Rays walk the volume with stochastic volumetric free-flight
+              sampling. Hits respond with diffuse and GGX materials, lit by an
+              HDR environment, then accumulate progressively. Transfer functions
+              drive extinction; 3D volume textures feed the march; active-tile
+              filtering skips settled tiles so interaction stays responsive.
+            </p>
+            <p class="featured__note">
+              Inspired by Mikhail Gorobets’ volume path-tracing work.
+              <a href="https://www.linkedin.com/posts/mmardanshahi_recently-working-on-on-a-brand-new-rendering-activity-7485211030223200257-pEl1">Original LinkedIn post</a>
+            </p>
+            <ul class="chips" aria-label="Technologies">
+              <li>OpenGL 3.3</li>
+              <li>GLSL 330</li>
+              <li>Path tracing</li>
+              <li>GGX</li>
+              <li>HDR IBL</li>
+              <li>ObjectTK</li>
+              <li>Transfer functions</li>
+              <li>Active-tile filtering</li>
+            </ul>
+          </div>
+        </article>
 
+        <div class="project-grid">
+          <article class="card">
+            <img
+              src="assets/img/3D%20Volume%20Rendering.png"
+              alt="Pipeline from stacked DICOM slices to opaque and translucent 3D skull renders."
+            />
+            <div class="card__body">
+              <h3>GPU Direct Volume Rendering</h3>
+              <p>
+                One-pass ray marching of CT/MR 3D textures with MIP, DVR, and
+                SSD compositing, up to eight masked layers, tricubic sampling,
+                Blinn–Phong lighting, and clinical transfer-function presets.
+                About 10× faster than the previous GDI renderer.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="assets/img/DSAPipeline.png"
+              alt="Digital subtraction angiography: contrast vessels isolated from overlapping bone and soft tissue."
+            />
+            <div class="card__body">
+              <h3>Digital Subtraction Angiography</h3>
+              <p>
+                Fo-Dicom to SimpleITK conversion and DSA for XA series.
+                Roughly 2× faster than the prior Leadtools toolkit, which
+                removed an ~$8,000 annual SDK cost.
+              </p>
+            </div>
+          </article>
+
+          <article class="card card--text">
+            <div class="card__body">
+              <h3>Interactive 3D MPR</h3>
+              <p>
+                Oblique multiplanar reconstruction inside the live 3D volume:
+                rotatable cross-sections, 2D/3D correlation, bounding-box crop,
+                volume cut, and Camera3D navigation for trauma and surgical
+                planning cases in the PACS viewer.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section__head">
+          <p class="eyebrow">Experience</p>
+          <h2>Where the work happened</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__when">2021 — Present</p>
+              <p class="timeline__where">MiNNOVAA</p>
+            </div>
+            <div class="timeline__body">
+              <h3>Senior OpenGL Developer</h3>
+              <ul>
+                <li>
+                  Designed a cinematic GPU volume path tracer for ZEUS:
+                  stochastic free-flight sampling, diffuse/GGX response, HDR
+                  environment lighting, progressive accumulation, transfer
+                  functions, 3D volume textures, and active-tile filtering on
+                  OpenGL 3.3 with ObjectTK.
+                </li>
+                <li>
+                  Built the production GPU DVR stack: one-pass ray marching,
+                  MIP/DVR/SSD, up to eight masked layers, Blinn–Phong shading,
+                  tricubic sampling, and transfer-function presets. Real-time
+                  3D of DICOM slices, about 10× faster than GDI.
+                </li>
+                <li>
+                  Shipped 3D workstation tools: Camera3D, bounding-box crop,
+                  volume cut, layer-box transfer-function editing, and
+                  interactive 3D MPR.
+                </li>
+                <li>
+                  Integrated OpenTK into ZEUS so 3D data renders on the GPU,
+                  and delivered a custom OpenGL camera and renderer that
+                  replaced Activiz (.NET VTK).
+                </li>
+                <li>
+                  Built Fo-Dicom to SimpleITK conversion and DSA, about 2×
+                  faster than Leadtools, saving roughly $8,000 per year in SDK
+                  cost.
+                </li>
+                <li>
+                  Released Faraabeen, a DICOM viewer that can decrypt Kekishe
+                  encrypted studies, keeping that capability inside MiNNOVAA
+                  products.
+                </li>
+                <li>
+                  Ray-cast volume rendering contributed to more than 20% sales
+                  growth in a 90-day period versus the same period the year
+                  before.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__when">2019 — 2021</p>
+              <p class="timeline__where">Roundium</p>
+            </div>
+            <div class="timeline__body">
+              <h3>Real-time Image Processing Scientist</h3>
+              <p>
+                Built a pipeline for optical head-position tracking plus pupil
+                tracking to estimate gaze. Mean accuracy of 2°, matching
+                contemporary research systems, in real time on a custom
+                eye-tracker.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__when">2018 — 2019</p>
+              <p class="timeline__where">Tehran Jarrah Novin</p>
+            </div>
+            <div class="timeline__body">
+              <h3>3D Modeling / 3D Printing Engineer</h3>
+              <p>
+                3D modeling and printing for a medical-engineering company,
+                including support around Covidien and Medtronic devices.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__when">2016 — 2018</p>
+              <p class="timeline__where">K. N. Toosi University of Technology</p>
+            </div>
+            <div class="timeline__body">
+              <h3>M.Sc. Biomedical Engineering</h3>
+              <p>Thesis: Design and construction of an eye-tracking system.</p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__meta">
+              <p class="timeline__when">2009 — 2014</p>
+              <p class="timeline__where">Shahid Rajaee University</p>
+            </div>
+            <div class="timeline__body">
+              <h3>B.S. Electrical Engineering</h3>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section__head">
+          <p class="eyebrow">Skills</p>
+          <h2>What I use every week</h2>
+        </div>
+        <div class="skill-groups">
           <div>
-            <div class="contact__info">
-              <h3 class="contact__subtitle">Call me</h3>
-              <span class="contact__text">+98 903 123 1991</span>
-            </div>
+            <h3>Graphics</h3>
+            <ul class="chips">
+              <li>OpenGL 3.3 Core</li>
+              <li>GLSL 330</li>
+              <li>OpenTK</li>
+              <li>ObjectTK</li>
+              <li>Volume rendering</li>
+              <li>Path tracing</li>
+              <li>Transfer functions</li>
+              <li>MPR</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Languages &amp; platforms</h3>
+            <ul class="chips">
+              <li>C#</li>
+              <li>.NET 4.7.2 / .NET 6</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>WinForms</li>
+              <li>WPF</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Medical imaging</h3>
+            <ul class="chips">
+              <li>DICOM</li>
+              <li>fo-dicom</li>
+              <li>SimpleITK</li>
+              <li>DSA</li>
+              <li>CT / MR / XA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <div class="contact__info">
-              <h3 class="contact__subtitle">Email</h3>
-              <span class="contact__text">iammardanshahi[at]gmail.com</span>
-            </div>
+      <section class="section" id="contact">
+        <div class="section__head">
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+        <div class="contact">
+          <p class="contact__lead">
+            If you want to talk about graphics, medical visualization, or a
+            role that needs both — write or call.
+          </p>
+          <div class="contact__links">
+            <a class="contact__card" href="mailto:iammardanshahi@gmail.com">
+              <i class="bx bx-envelope"></i>
+              <span>iammardanshahi@gmail.com</span>
+            </a>
+            <a class="contact__card" href="tel:+989031231991">
+              <i class="bx bx-phone"></i>
+              <span>+98 903 123 1991</span>
+            </a>
+            <a class="contact__card" href="https://www.linkedin.com/in/mmardanshahi/">
+              <i class="bx bxl-linkedin"></i>
+              <span>linkedin.com/in/mmardanshahi</span>
+            </a>
+            <a class="contact__card" href="https://github.com/mardanshahi">
+              <i class="bx bxl-github"></i>
+              <span>github.com/mardanshahi</span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <!--===== FOOTER =====-->
-    <footer class="footer section">
-      <div class="footer_container bd-grid">
-        <h1 class="footer_title">Masoud Mardanshahi</h1>
-        <p class="footer_description">
-          Seek to work for a successful company that uses cutting-edge technologies and has vision and who recognizes and rewards performers.
-          If you want to hire me please feel free to reach out.<br /><br />
-        </p>
-
-        <div class="footer__social">
-          <a href="https://linkedin.com/in/mmardanshahi/" class="footer__link"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/mardanshahi" class="footer__link"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-
-        <p class="footer__copy">Template inspired by Bedimcode - 2020</p>
-      </div>
+    <footer class="footer">
+      <p>Masoud Mardanshahi · Senior OpenGL Developer @ MiNNOVAA</p>
+      <p class="footer__copy">Tehran · open to relocation</p>
     </footer>
 
-    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

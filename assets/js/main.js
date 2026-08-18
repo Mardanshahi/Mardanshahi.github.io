@@ -1,48 +1,43 @@
-/*===== MENU SHOW Y HIDDEN =====*/
-const navMenu = document.getElementById("nav-menu"),
-  toggleMenu = document.getElementById("nav-toggle"),
-  closeMenu = document.getElementById("nav-close");
+const navMenu = document.getElementById("nav-menu");
+const toggleMenu = document.getElementById("nav-toggle");
+const closeMenu = document.getElementById("nav-close");
 
-// SHOW
 toggleMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+  navMenu.classList.add("show");
 });
 
-// HIDDEN
 closeMenu.addEventListener("click", () => {
   navMenu.classList.remove("show");
 });
 
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll(".nav__link");
+document.querySelectorAll(".nav__link").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+  });
+});
 
-function linkAction() {
-  navMenu.classList.remove("show");
-}
-
-navLink.forEach((n) => n.addEventListener("click", linkAction));
-
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll("section[id]");
-
-window.addEventListener("scroll", scrollActive);
 
 function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    const sectionTop = current.offsetTop - 80;
+    const sectionId = current.getAttribute("id");
+    const link = document.querySelector('.nav__menu a[href="#' + sectionId + '"]');
+
+    if (!link) {
+      return;
+    }
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active");
+      link.classList.add("active");
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active");
+      link.classList.remove("active");
     }
   });
 }
+
+window.addEventListener("scroll", scrollActive);
+scrollActive();

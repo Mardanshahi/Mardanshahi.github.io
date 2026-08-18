@@ -1,10 +1,5 @@
-# Masoud's Portfolio
-## Template inspired by Bedimcode - 2020
+# Masoud Mardanshahi
 
-- Responsive Personal Complete Portfolio Using HTML CSS & JavaScript
-- Smooth scrolling in each section.
-- Compatible with all mobile devices and desktop, with a beautiful and pleasant user interface.
+Personal resume site for [masoudmardanshahi.ir](https://www.masoudmardanshahi.ir/).
 
-### Desktop Preview
-![desktop preview img](/preview/theme-2.jpg)
-
+Senior OpenGL Developer at MiNNOVAA. The site is a static GitHub Pages page covering medical volume rendering and the cinematic OpenGL engine for the ZEUS workstation.
