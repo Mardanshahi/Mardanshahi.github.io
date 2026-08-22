@@ -1,19 +1,40 @@
 const navMenu = document.getElementById("nav-menu");
 const toggleMenu = document.getElementById("nav-toggle");
-const closeMenu = document.getElementById("nav-close");
+const closeBtn = document.getElementById("nav-close");
+const navOverlay = document.getElementById("nav-overlay");
 
-toggleMenu.addEventListener("click", () => {
+function openNav() {
   navMenu.classList.add("show");
-});
+  navOverlay.classList.add("show");
+  document.body.classList.add("nav-open");
+  toggleMenu.setAttribute("aria-expanded", "true");
+}
 
-closeMenu.addEventListener("click", () => {
+function closeNav() {
   navMenu.classList.remove("show");
+  navOverlay.classList.remove("show");
+  document.body.classList.remove("nav-open");
+  toggleMenu.setAttribute("aria-expanded", "false");
+}
+
+toggleMenu.addEventListener("click", openNav);
+closeBtn.addEventListener("click", closeNav);
+navOverlay.addEventListener("click", closeNav);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeNav();
+  }
 });
 
 document.querySelectorAll(".nav__link").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("show");
-  });
+  link.addEventListener("click", closeNav);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    closeNav();
+  }
 });
 
 const sections = document.querySelectorAll("section[id]");
